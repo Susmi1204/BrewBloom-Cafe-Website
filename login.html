@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewBloom - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+<div class="auth-container">
+
+    <div class="auth-left">
+        <div class="auth-logo">☕ BrewBloom</div>
+        <h1>Welcome Back!</h1>
+        <p>
+            Your favorite coffee, delicious food and cozy moments
+            are waiting for you.
+        </p>
+    </div>
+
+    <div class="auth-box">
+
+        <h2>Login</h2>
+        <p class="auth-subtitle">Login to continue to BrewBloom</p>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+                <label>Email</label>
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="auth-btn">
+                Login
+            </button>
+
+        </form>
+
+        <p id="loginMessage" class="message"></p>
+
+        <p class="switch-auth">
+            Don't have an account?
+            <a href="signup.html">Create Account</a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

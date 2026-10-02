@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BrewBloom - Café</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ☕ BrewBloom
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#menu">Menu</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+        <div class="nav-actions">
+
+            <button id="themeBtn">
+                🌙
+            </button>
+
+            <button id="cartBtn">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            WELCOME TO BREWBLOOM
+        </p>
+
+        <h1>
+            Brewed With Love,
+            <span>Served With Joy.</span>
+        </h1>
+
+        <p>
+            Fresh coffee, delicious food and cozy moments
+            made especially for you.
+        </p>
+
+        <a href="#menu" class="hero-btn">
+            Explore Menu
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+    <div class="about-content">
+
+        <div>
+
+            <p class="section-label">
+                ABOUT US
+            </p>
+
+            <h2>
+                More Than Just Coffee
+            </h2>
+
+            <p>
+                BrewBloom is a cozy café created for coffee lovers,
+                foodies and anyone looking for a relaxing place.
+            </p>
+
+            <p>
+                From freshly brewed coffee to delicious desserts,
+                every item is prepared with care.
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <div>☕</div>
+
+            <h3>
+                Freshly Brewed
+            </h3>
+
+            <p>
+                Premium coffee beans and fresh ingredients.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section id="menu" class="menu-section">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            OUR MENU
+        </p>
+
+        <h2>
+            Explore Our Favorites
+        </h2>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="menu-controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔎 Search menu..."
+        >
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="coffee">
+                Coffee
+            </option>
+
+            <option value="food">
+                Food
+            </option>
+
+            <option value="dessert">
+                Desserts
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div id="menuGrid" class="menu-grid">
+
+        <!-- Coffee -->
+
+        <div class="menu-card"
+             data-name="Espresso"
+             data-category="coffee">
+
+            <img src="images/espresso.jpg"
+                 alt="Espresso">
+
+            <div class="card-content">
+
+                <span class="category">
+                    Coffee
+                </span>
+
+                <h3>
+                    Espresso
+                </h3>
+
+                <p>
+                    Strong and rich classic espresso.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>
+                        ₹120
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Espresso"
+                        data-price="120">
+
+                        Add +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-card"
+             data-name="Cappuccino"
+             data-category="coffee">
+
+            <img src="images/cappuccino.jpg"
+                 alt="Cappuccino">
+
+            <div class="card-content">
+
+                <span class="category">
+                    Coffee
+                </span>
+
+                <h3>
+                    Cappuccino
+                </h3>
+
+                <p>
+                    Smooth espresso with creamy foam.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>
+                        ₹160
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Cappuccino"
+                        data-price="160">
+
+                        Add +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-card"
+             data-name="Cold Coffee"
+             data-category="coffee">
+
+            <img src="images/coldcoffee.jpg"
+                 alt="Cold Coffee">
+
+            <div class="card-content">
+
+                <span class="category">
+                    Coffee
+                </span>
+
+                <h3>
+                    Cold Coffee
+                </h3>
+
+                <p>
+                    Chilled creamy coffee for refreshing moments.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>
+                        ₹150
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Cold Coffee"
+                        data-price="150">
+
+                        Add +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Food -->
+
+        <div class="menu-card"
+             data-name="Veg Sandwich"
+             data-category="food">
+
+            <img src="images/sandwich.jpg"
+                 alt="Sandwich">
+
+            <div class="card-content">
+
+                <span class="category">
+                    Food
+                </span>
+
+                <h3>
+                    Veg Sandwich
+                </h3>
+
+                <p>
+                    Fresh vegetables with toasted bread.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>
+                        ₹140
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Veg Sandwich"
+                        data-price="140">
+
+                        Add +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-card"
+             data-name="Classic Burger"
+             data-category="food">
+
+            <img src="images/burger.jpg"
+                 alt="Burger">
+
+            <div class="card-content">
+
+                <span class="category">
+                    Food
+                </span>
+
+                <h3>
+                    Classic Burger
+                </h3>
+
+                <p>
+                    Crispy vegetables and delicious sauces.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>
+                        ₹180
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Classic Burger"
+                        data-price="180">
+
+                        Add +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Desserts -->
+
+        <div class="menu-card"
+             data-name="Chocolate Cake"
+             data-category="dessert">
+
+            <img src="images/cake.jpg"
+                 alt="Chocolate Cake">
+
+            <div class="card-content">
+
+                <span class="category">
+                    Dessert
+                </span>
+
+                <h3>
+                    Chocolate Cake
+                </h3>
+
+                <p>
+                    Soft chocolate cake with rich frosting.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>
+                        ₹190
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Chocolate Cake"
+                        data-price="190">
+
+                        Add +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-card"
+             data-name="Brownie"
+             data-category="dessert">
+
+            <img src="images/brownie.jpg"
+                 alt="Brownie">
+
+            <div class="card-content">
+
+                <span class="category">
+                    Dessert
+                </span>
+
+                <h3>
+                    Chocolate Brownie
+                </h3>
+
+                <p>
+                    Warm and delicious chocolate brownie.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>
+                        ₹130
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Brownie"
+                        data-price="130">
+
+                        Add +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-card"
+             data-name="Croissant"
+             data-category="dessert">
+
+            <img src="images/croissant.jpg"
+                 alt="Croissant">
+
+            <div class="card-content">
+
+                <span class="category">
+                    Dessert
+                </span>
+
+                <h3>
+                    Butter Croissant
+                </h3>
+
+                <p>
+                    Fresh buttery and crispy croissant.
+                </p>
+
+                <div class="card-bottom">
+
+                    <strong>
+                        ₹110
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Croissant"
+                        data-price="110">
+
+                        Add +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            CONTACT US
+        </p>
+
+        <h2>
+            We'd Love To Hear From You
+        </h2>
+
+    </div>
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="contactName"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="contactEmail"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            id="contactMessage"
+            rows="5"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="contactStatus"></p>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        ☕ BrewBloom
+    </div>
+
+    <p>
+        Fresh coffee. Good food. Great moments.
+    </p>
+
+    <p>
+        © 2026 BrewBloom. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= CART ================= -->
+
+<div id="cartModal" class="cart-modal">
+
+    <div class="cart-box">
+
+        <button id="closeCart"
+                class="close-cart">
+            ✕
+        </button>
+
+        <h2>
+            🛒 Your Cart
+        </h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+
+            Total:
+            ₹<span id="cartTotal">0</span>
+
+        </div>
+
+        <button id="checkoutBtn"
+                class="checkout-btn">
+
+            Checkout
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
